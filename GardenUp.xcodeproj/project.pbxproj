@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4CA76FC22184FE6800E8D131 /* VegetableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA76FC12184FE6800E8D131 /* VegetableViewController.swift */; };
+		4CA76FC42184FEC400E8D131 /* VegetableDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CA76FC32184FEC400E8D131 /* VegetableDetailViewController.swift */; };
 		4CC0458A218424A200B5246C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC04589218424A200B5246C /* AppDelegate.swift */; };
 		4CC0458C218424A200B5246C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC0458B218424A200B5246C /* ViewController.swift */; };
 		4CC0458F218424A200B5246C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CC0458D218424A200B5246C /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4CA76FC12184FE6800E8D131 /* VegetableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VegetableViewController.swift; sourceTree = "<group>"; };
+		4CA76FC32184FEC400E8D131 /* VegetableDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VegetableDetailViewController.swift; sourceTree = "<group>"; };
 		4CC04586218424A200B5246C /* GardenUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GardenUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CC04589218424A200B5246C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CC0458B218424A200B5246C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +60,8 @@
 			children = (
 				4CC04589218424A200B5246C /* AppDelegate.swift */,
 				4CC0458B218424A200B5246C /* ViewController.swift */,
+				4CA76FC12184FE6800E8D131 /* VegetableViewController.swift */,
+				4CA76FC32184FEC400E8D131 /* VegetableDetailViewController.swift */,
 				4CC0458D218424A200B5246C /* Main.storyboard */,
 				4CC04590218424A400B5246C /* Assets.xcassets */,
 				4CC04592218424A400B5246C /* LaunchScreen.storyboard */,
@@ -135,8 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CA76FC22184FE6800E8D131 /* VegetableViewController.swift in Sources */,
 				4CC0458C218424A200B5246C /* ViewController.swift in Sources */,
 				4CC0458A218424A200B5246C /* AppDelegate.swift in Sources */,
+				4CA76FC42184FEC400E8D131 /* VegetableDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

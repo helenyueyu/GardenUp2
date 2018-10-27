@@ -17,38 +17,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="jqD-mb-b0K">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="jqD-mb-b0K">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vegetables" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8rS-Vp-rtX">
-                                <rect key="frame" x="0.0" y="557" width="375" height="45"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="b5F-GI-qLq"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Book" family="Bodoni 72 Oldstyle" pointSize="25"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fruits" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1g-H0-VbO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="987-rW-vdG">
                                 <rect key="frame" x="0.0" y="602" width="375" height="45"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="45" id="rMY-c9-Hee"/>
+                                    <constraint firstAttribute="height" constant="45" id="Z2k-gY-RJv"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Book" family="Bodoni 72 Oldstyle" pointSize="25"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="25"/>
+                                <state key="normal" title="Fruits">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ud-oi-XQh">
+                                <rect key="frame" x="0.0" y="557" width="375" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Aq9-q4-t5Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="25"/>
+                                <state key="normal" title="Vegetables">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ccG-F9-d0H" kind="show" id="cbR-Ko-RIC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L1g-H0-VbO" secondAttribute="trailing" id="451-qv-2eU"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8rS-Vp-rtX" secondAttribute="trailing" id="75X-KM-hdo"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="L1g-H0-VbO" secondAttribute="bottom" constant="20" id="bCO-Ct-Kar"/>
-                            <constraint firstItem="L1g-H0-VbO" firstAttribute="top" secondItem="8rS-Vp-rtX" secondAttribute="bottom" id="hOH-EC-zwN"/>
-                            <constraint firstItem="8rS-Vp-rtX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="o6E-dS-J24"/>
-                            <constraint firstItem="L1g-H0-VbO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rv9-Ja-ALn"/>
-                            <constraint firstItem="L1g-H0-VbO" firstAttribute="top" secondItem="8rS-Vp-rtX" secondAttribute="bottom" id="zR7-7S-NeH"/>
+                            <constraint firstItem="jqD-mb-b0K" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="HXK-4V-Vdr"/>
+                            <constraint firstItem="987-rW-vdG" firstAttribute="top" secondItem="3ud-oi-XQh" secondAttribute="bottom" id="IDe-T2-KNZ"/>
+                            <constraint firstItem="3ud-oi-XQh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RIj-Ap-Ytx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3ud-oi-XQh" secondAttribute="trailing" id="UDj-yY-G8e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="987-rW-vdG" secondAttribute="bottom" constant="20" id="Wgn-lo-d8U"/>
+                            <constraint firstItem="jqD-mb-b0K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aCv-84-Nof"/>
+                            <constraint firstItem="jqD-mb-b0K" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="edh-4X-MFg"/>
+                            <constraint firstItem="jqD-mb-b0K" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="j07-tB-T4q"/>
+                            <constraint firstItem="987-rW-vdG" firstAttribute="top" secondItem="3ud-oi-XQh" secondAttribute="bottom" id="nyo-fP-ul4"/>
+                            <constraint firstItem="987-rW-vdG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sIU-ce-vgg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="987-rW-vdG" secondAttribute="trailing" id="zLg-Zp-p6R"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -56,6 +64,130 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--Vegetable View Controller-->
+        <scene sceneID="ka0-9p-k7G">
+            <objects>
+                <viewController id="ccG-F9-d0H" customClass="VegetableViewController" customModule="GardenUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="esD-Qs-NcO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vegetables" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F2g-8Q-zjo">
+                                <rect key="frame" x="0.0" y="20" width="375" height="45"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="IrF-6p-eqE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="J3Z-q0-vb7">
+                                <rect key="frame" x="0.0" y="65" width="375" height="557"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="jx6-0m-lPz">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jx6-0m-lPz" id="X2I-JT-no2">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LBH-hh-H7c">
+                                                    <rect key="frame" x="31" y="16" width="36" height="20"/>
+                                                    <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Book" family="Bodoni 72 Oldstyle" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="LBH-hh-H7c" firstAttribute="leading" secondItem="X2I-JT-no2" secondAttribute="leadingMargin" constant="16" id="tqv-5o-xSk"/>
+                                                <constraint firstItem="LBH-hh-H7c" firstAttribute="top" secondItem="X2I-JT-no2" secondAttribute="topMargin" constant="5" id="vT8-uB-JuI"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0e-uL-qHW">
+                                <rect key="frame" x="0.0" y="622" width="375" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="XSS-gD-wCf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Book" family="Bodoni 72 Oldstyle" pointSize="25"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Gl4-MC-uWx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rmo-gb-no9" firstAttribute="trailing" secondItem="F2g-8Q-zjo" secondAttribute="trailing" id="ALb-pd-eGW"/>
+                            <constraint firstItem="J3Z-q0-vb7" firstAttribute="top" secondItem="F2g-8Q-zjo" secondAttribute="bottom" id="Eqn-qi-w61"/>
+                            <constraint firstItem="rmo-gb-no9" firstAttribute="bottom" secondItem="g0e-uL-qHW" secondAttribute="bottom" id="IMh-Z5-q1C"/>
+                            <constraint firstItem="J3Z-q0-vb7" firstAttribute="leading" secondItem="rmo-gb-no9" secondAttribute="leading" id="JrI-Ta-oVa"/>
+                            <constraint firstItem="F2g-8Q-zjo" firstAttribute="top" secondItem="rmo-gb-no9" secondAttribute="top" id="aTN-l5-khT"/>
+                            <constraint firstItem="F2g-8Q-zjo" firstAttribute="leading" secondItem="rmo-gb-no9" secondAttribute="leading" id="fKq-RF-rfO"/>
+                            <constraint firstItem="g0e-uL-qHW" firstAttribute="top" secondItem="J3Z-q0-vb7" secondAttribute="bottom" id="fN7-0L-eqb"/>
+                            <constraint firstItem="g0e-uL-qHW" firstAttribute="leading" secondItem="rmo-gb-no9" secondAttribute="leading" id="lFT-ih-uQe"/>
+                            <constraint firstItem="J3Z-q0-vb7" firstAttribute="trailing" secondItem="rmo-gb-no9" secondAttribute="trailing" id="m9h-jI-OIg"/>
+                            <constraint firstItem="J3Z-q0-vb7" firstAttribute="top" secondItem="F2g-8Q-zjo" secondAttribute="bottom" id="up2-sd-6Nf"/>
+                            <constraint firstItem="rmo-gb-no9" firstAttribute="trailing" secondItem="g0e-uL-qHW" secondAttribute="trailing" id="wDj-nm-yyb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rmo-gb-no9"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aQD-Zk-w14" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="965.60000000000002" y="-223.53823088455775"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="FI1-GF-58H">
+            <objects>
+                <viewController id="uJJ-9p-jYf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cqH-r7-Li4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="D7x-Xf-mAe"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AtP-pG-D8c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="966" y="519"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="XAv-uo-m7g">
+            <objects>
+                <viewController id="sqC-lh-e9U" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AS9-Z7-qUf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="I0p-Ol-Sl6"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Xy-DO-Jmx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1761" y="519"/>
+        </scene>
+        <!--Vegetable Detail View Controller-->
+        <scene sceneID="4Nd-Cs-SAN">
+            <objects>
+                <viewController id="HC1-rH-5uj" customClass="VegetableDetailViewController" customModule="GardenUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SMy-p1-YHs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="mYv-eP-BCC"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hFp-Qr-RCw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1762" y="-223"/>
         </scene>
     </scenes>
     <resources>
